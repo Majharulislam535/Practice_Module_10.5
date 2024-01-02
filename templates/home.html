@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+      <h1><a href="/">Home page </a></h1>
+      <h1><a href="/first_app/contact/">Contact </a></h1>
+      <h1><a href="/first_app/about/">Contact </a></h1>
+
+      <h2>   {{20 | add:"5"}}</h2>
+      <h2>   {{ 'hasan' | capfirst }} </h2>
+      <h2>{{'My name is majharul' | cut:'m'}}</h2>
+       {% for i in marks  %}
+       <h2>{{i}}</h2>
+       {%endfor%}
+    
+    <h2>{{marks | length}}</h2>
+    {% for i in food %}
+    <h2>{{ i | linenumbers }}</h2>
+    {%endfor%}
+
+     
+    <h2>{{ food | random }}</h2>
+    <h2>{{ food | slice:'2' }}</h2>
+
+    <h2>{{'My name is majharul' | wordcount}}</h2>
+    <h2>{{'My name is majharul' | truncatewords:2}}</h2>
+    <h2>{{'My name is majharul' | lower}}</h2>
+     
+
+
+</body>
+</html>
